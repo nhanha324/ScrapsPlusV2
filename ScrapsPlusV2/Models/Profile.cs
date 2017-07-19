@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using ScrapsPlusV2.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -23,4 +25,5 @@ namespace ScrapsPlusV2.Models
      
 
     }
+   
 }

@@ -23,5 +23,21 @@ namespace ScrapsPlusV2.Models.AccountViewModels
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+
+        [Required]
+        [Display(Name = "Last Name")]
+        public string LastName { get; set; }
+        [Required]
+        [Display(Name = "First Name")]
+        public string FirstName { get; set; }
+        public int Age { get; set; }
+        [Required]
+        [Display(Name = "Date of Birth")]
+        public DateTime DateOfBirth { get; set; }
+        [Required]
+        [Display(Name = "Recovery Email")]
+        public string RecoveryEmail { get; set; }
+
     }
 }

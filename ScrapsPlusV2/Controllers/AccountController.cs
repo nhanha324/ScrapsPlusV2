@@ -24,6 +24,8 @@ namespace ScrapsPlusV2.Controllers
         private readonly ISmsSender _smsSender;
         private readonly ILogger _logger;
         private readonly string _externalCookieScheme;
+        private readonly ProfileService _proServ;
+
 
         public AccountController(
             UserManager<ApplicationUser> userManager,
@@ -31,8 +33,12 @@ namespace ScrapsPlusV2.Controllers
             IOptions<IdentityCookieOptions> identityCookieOptions,
             IEmailSender emailSender,
             ISmsSender smsSender,
-            ILoggerFactory loggerFactory)
+            ILoggerFactory loggerFactory,
+            ProfileService proServ
+            )
+
         {
+            _proServ = proServ;
             _userManager = userManager;
             _signInManager = signInManager;
             _externalCookieScheme = identityCookieOptions.Value.ExternalCookieAuthenticationScheme;
@@ -112,9 +118,22 @@ namespace ScrapsPlusV2.Controllers
             ViewData["ReturnUrl"] = returnUrl;
             if (ModelState.IsValid)
             {
+                var profile = new Profile
+                {
+
+                    //creates a new profile from the view which passes to the service layer which then adds the rest of the info that we need and saves to DB as a new profile
+                    FirstName = model.FirstName,
+                    LastName = model.LastName,
+                    DateOfBirth = model.DateOfBirth,
+                    RecoveryEmail = model.RecoveryEmail,
+                    Email = model.Email
+
+                };
+                var newProfile = _proServ.AddProfile(profile);
+
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
                 var result = await _userManager.CreateAsync(user, model.Password);
-                if (result.Succeeded)
+                if (result.Succeeded && (newProfile != null))
                 {
                     // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=532713
                     // Send an email with this link

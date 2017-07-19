@@ -24,7 +24,7 @@ namespace ScrapsPlusV2.Controllers
         private readonly ISmsSender _smsSender;
         private readonly ILogger _logger;
         private readonly string _externalCookieScheme;
-        private readonly ProfileService _proServ;
+        public readonly ProfileService _proServ;
 
 
         public AccountController(

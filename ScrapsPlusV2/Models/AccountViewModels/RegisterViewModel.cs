@@ -26,17 +26,17 @@ namespace ScrapsPlusV2.Models.AccountViewModels
 
 
         [Required]
-        [Display(Name = "Last Name")]
+        [Display(Name = "LastName")]
         public string LastName { get; set; }
         [Required]
-        [Display(Name = "First Name")]
+        [Display(Name = "FirstName")]
         public string FirstName { get; set; }
         public int Age { get; set; }
         [Required]
-        [Display(Name = "Date of Birth")]
+        [Display(Name = "DateOfBirth")]
         public DateTime DateOfBirth { get; set; }
         [Required]
-        [Display(Name = "Recovery Email")]
+        [Display(Name = "RecoveryEmail")]
         public string RecoveryEmail { get; set; }
 
     }

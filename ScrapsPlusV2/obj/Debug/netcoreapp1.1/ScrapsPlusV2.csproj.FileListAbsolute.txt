@@ -7,3 +7,13 @@ C:\Projects\ScrapsPlusV2\ScrapsPlusV2\bin\Debug\netcoreapp1.1\ScrapsPlusV2.dll
 C:\Projects\ScrapsPlusV2\ScrapsPlusV2\bin\Debug\netcoreapp1.1\ScrapsPlusV2.pdb
 C:\Projects\ScrapsPlusV2\ScrapsPlusV2\obj\Debug\netcoreapp1.1\ScrapsPlusV2.dll
 C:\Projects\ScrapsPlusV2\ScrapsPlusV2\obj\Debug\netcoreapp1.1\ScrapsPlusV2.pdb
+J:\projects\2ScrapsPlus\ScrapsPlusV2\ScrapsPlusV2\bin\Debug\netcoreapp1.1\ScrapsPlusV2.deps.json
+J:\projects\2ScrapsPlus\ScrapsPlusV2\ScrapsPlusV2\bin\Debug\netcoreapp1.1\ScrapsPlusV2.runtimeconfig.json
+J:\projects\2ScrapsPlus\ScrapsPlusV2\ScrapsPlusV2\bin\Debug\netcoreapp1.1\ScrapsPlusV2.runtimeconfig.dev.json
+J:\projects\2ScrapsPlus\ScrapsPlusV2\ScrapsPlusV2\bin\Debug\netcoreapp1.1\ScrapsPlusV2.dll
+J:\projects\2ScrapsPlus\ScrapsPlusV2\ScrapsPlusV2\bin\Debug\netcoreapp1.1\ScrapsPlusV2.pdb
+J:\projects\2ScrapsPlus\ScrapsPlusV2\ScrapsPlusV2\obj\Debug\netcoreapp1.1\ScrapsPlusV2.csprojResolveAssemblyReference.cache
+J:\projects\2ScrapsPlus\ScrapsPlusV2\ScrapsPlusV2\obj\Debug\netcoreapp1.1\UserSecretsAssemblyInfo.cs
+J:\projects\2ScrapsPlus\ScrapsPlusV2\ScrapsPlusV2\obj\Debug\netcoreapp1.1\ScrapsPlusV2.AssemblyInfo.cs
+J:\projects\2ScrapsPlus\ScrapsPlusV2\ScrapsPlusV2\obj\Debug\netcoreapp1.1\ScrapsPlusV2.dll
+J:\projects\2ScrapsPlus\ScrapsPlusV2\ScrapsPlusV2\obj\Debug\netcoreapp1.1\ScrapsPlusV2.pdb

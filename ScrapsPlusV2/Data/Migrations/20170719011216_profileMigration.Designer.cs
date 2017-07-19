@@ -8,9 +8,10 @@ using ScrapsPlusV2.Data;
 namespace ScrapsPlusV2.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20170719011216_profileMigration")]
+    partial class profileMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.2")
@@ -123,20 +124,6 @@ namespace ScrapsPlusV2.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("ScrapsPlusV2.Models.Album", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("AlbumName");
-
-                    b.Property<int>("ProfileID");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("Albums");
-                });
-
             modelBuilder.Entity("ScrapsPlusV2.Models.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
@@ -187,34 +174,6 @@ namespace ScrapsPlusV2.Data.Migrations
                     b.ToTable("AspNetUsers");
                 });
 
-            modelBuilder.Entity("ScrapsPlusV2.Models.MembershipLevel", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Level");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("MembershipLevels");
-                });
-
-            modelBuilder.Entity("ScrapsPlusV2.Models.Photo", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<int>("AlbumID");
-
-                    b.Property<int>("ProfileID");
-
-                    b.Property<string>("Route");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("Photos");
-                });
-
             modelBuilder.Entity("ScrapsPlusV2.Models.Profile", b =>
                 {
                     b.Property<int>("ID")
@@ -238,23 +197,9 @@ namespace ScrapsPlusV2.Data.Migrations
 
                     b.Property<string>("RecoveryEmail");
 
-                    b.Property<int>("SubscriptionStatusID");
-
                     b.HasKey("ID");
 
                     b.ToTable("Profiles");
-                });
-
-            modelBuilder.Entity("ScrapsPlusV2.Models.SubscriptionStatus", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Status");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("SubscriptionStatuses");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityRoleClaim<string>", b =>

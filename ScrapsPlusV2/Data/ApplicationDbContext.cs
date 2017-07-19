@@ -15,6 +15,18 @@ namespace ScrapsPlusV2.Data
         {
         }
 
+
+
+        public DbSet<Profile> Profiles { get; set; }
+        public DbSet<Photo> Photos { get; set; }
+        public DbSet<Album> Albums { get; set; }
+        public DbSet<MembershipLevel> MembershipLevels { get; set; }
+        public DbSet<SubscriptionStatus> SubscriptionStatuses { get; set; }
+
+
+
+
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

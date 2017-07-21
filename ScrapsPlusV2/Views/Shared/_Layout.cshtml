@@ -40,7 +40,11 @@
             </div>
         </div>
     </nav>
-    <div class="container body-content">
+    <div class="container body-content" ng-app="ScrapsPlusV2">
+        
+        <!--render angular views here-->
+        <div ng-view></div>
+        
         @RenderBody()
         <hr />
         <footer>
@@ -67,6 +71,8 @@
                 integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
     </environment>
 
     @RenderSection("Scripts", required: false)

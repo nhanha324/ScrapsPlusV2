@@ -1,18 +1,10 @@
-var app = angular.module("ScrapsPlusV2" [ngRoute]);
-app.config(function($routeProvider) {
+var app = angular.module("ScrapsPlusV2", ["ngRoute"]);
+app.config(function ($routeProvider) {
     $routeProvider
-    .when("/", {
-        templateUrl : "../Views/home.html"
-        controller: homeController
-        
-    })
-    .when("/red", {
-        templateUrl : "red.htm"
-    })
-    .when("/green", {
-        templateUrl : "green.htm"
-    })
-    .when("/blue", {
-        templateUrl : "blue.htm"
-    });
+        .when("/nhanha", {
+            
+            templateUrl: "../Views/home.html",
+            controller: "homeController.js"
+
+        })
 });

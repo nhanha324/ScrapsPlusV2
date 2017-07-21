@@ -32,7 +32,7 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a href="/#!nhanha">Home</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
                 </ul>
@@ -43,9 +43,9 @@
     <div class="container body-content" ng-app="ScrapsPlusV2">
         
         <!--render angular views here-->
-        <div ng-view></div>
+        <div ng-view>{{2+2}}</div>
         
-        @RenderBody()
+       @RenderBody()
         <hr />
         <footer>
             <p>&copy; 2017 - ScrapsPlusV2</p>
@@ -71,10 +71,13 @@
                 integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+        
     </environment>
-
     @RenderSection("Scripts", required: false)
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script src="~/js/app.js"></script>
+    <script src="~/js/homeController.js"></script>
+    
 </body>
 </html>

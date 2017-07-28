@@ -48,3 +48,55 @@ textarea {
         display: none;
     }
 }
+
+.topHeader{
+    height: 10vh;
+    background-color: #FFF;
+    z-index: 1;
+    width: 100%;
+}
+.topHeader > h1{
+    color: red;
+    margin-top: 0px;
+    padding: 2vh;
+}
+.wishlistRow {
+    display: flex;
+    margin-left:auto;
+}
+.wishlistRow > a {
+    margin-right: 3px;
+    margin-left: 3px;
+}
+.row-custom{
+    display: flex;
+    flex-direction: row;
+}
+.space{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+}
+a{
+    text-decoration: none;  
+    color: #d31a31;
+}
+    a:hover {
+        text-decoration: none;
+        color: black;
+        cursor:pointer;
+    }
+#logo{
+    height: 100%;
+}
+#logoContainer {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    height: 8vh;
+    display: flex;
+}
+.header-custom{
+    display: flex;
+    align-items:center;
+    height: 100%;
+}

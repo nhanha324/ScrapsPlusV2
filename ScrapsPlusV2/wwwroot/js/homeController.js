@@ -1,3 +1,4 @@
 app.controller("homeController", function($scope){
-    $scope.message= "home controller";
+    $scope.message = "home controller";
+    console.log("home");
 })

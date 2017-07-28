@@ -1,10 +1,15 @@
 var app = angular.module("ScrapsPlusV2", ["ngRoute"]);
-app.config(function ($routeProvider) {
+app.config(function ($routeProvider, $locationProvider) {
+   
     $routeProvider
-        .when("/nhanha", {
-            
+        .when("/", {
             templateUrl: "../Views/home.html",
-            controller: "homeController.js"
-
+            controller: "homeController"
         })
+        .when("/home", {
+            templateUrl: "../Views/home.html",
+            controller: "homeController"
+        })
+        .otherwise("/")
+    $locationProvider.html5Mode(true);
 });
